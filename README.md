@@ -59,4 +59,5 @@ The software architecture consists of three main layers, as shown in figure 1: t
 
 
 ![hello](images/Fig1.PNG).
+
 Figure 1. Schematic representation of ClinicalVolumes architecture. Graphical User Interface (GUI), Application Programming Interface (API) and the third-party libraries are schematically reported.
