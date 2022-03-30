@@ -20,4 +20,4 @@ Recent years have seen a rapid evolution of medical image analysis software [4, 
 The accuracy and efficiency of the new software has been evaluated for several MRI applications and the results are here reported. The tool is routinely used to perform cardiovascular MRI image analysis in our laboratories, thereby providing valuable diagnostic information for pre-clinical studies in murine models of cardiac diseases [12]. 
 
 
-                                                                  ![hello](images/Fig1.PNG).
+![hello](images/Fig1.PNG).
