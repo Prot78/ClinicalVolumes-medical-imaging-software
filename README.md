@@ -203,8 +203,6 @@ The validation of human and pre-clinical cardiac datasets was carried out by com
 
 Figure 7.  Bland-Altman plot of clinical (above) and preclinical (below) cardiac MRI data for EDV, ESV EF and Mass. Manual and ClinicalVolumes measurement from tester A were compared in order to achieve the relative variability values reported on the ordinate axis. The continuous and dashed line indicates the mean of the differences and 2 SD, respectively.
 
-![hello](images/Table1.PNG).
-
 B.2. Heart and brain ischemia
 In-vivo heart and ex-vivo brain ischemia intra- and inter-observer variability, mean and relative differences, for ClinicalVolumes and full manual segmentation, respectively are reported in figure 9. Also in these cases ClinicalVolumes seems to report higher precision and accuracy than a full manual segmentation.  Table 1 shows intra-observer variability of the segmentation methods. Figure 8A and 8B report the Bland-Altman analysis for heart and brain ischemia, respectively. The respective accuracies were about 16% and 11%. 
 
@@ -219,6 +217,9 @@ The total pre-clinical in-vivo adipose tissue mass is reported in figure 9 with 
 
 Figure 9. Intra and inter observer values of ClinicalVolumes and Manual segmentation. Mean and relative values ± SD are reported. Note: The mean difference for the intra-observer variability is calculated as mean of first segmentation minus second segmentation observer A. This difference is divided by their average to get the relative difference as a percentage. The mean difference of the inter-observer variability is calculated as mean of the difference between observers A and B for the given method. This difference is divided by the mean of both to get the mean percentage difference. *P < 0.05 first versus second segmentation observer A or **segmentation observer A versus observer B 
     
+![hello](images/Table1.PNG).
+
+
 ## Discussion
 This paper presents ClinicalVolumes as a robust and flexible computer program for rapid volumetric segmentation and quantification where a threshold method embedded into a semi-automatic tool is able to provide accurate and fast volumetric data analysis. Its application to various medical scenarios, which differentiate such computer program from similar tools, and its validation on MRI datasets are reported. Although Echocardiography and CT volumes can be studied giving it a multimodality appearance, the software has not been fully validated for these two modalities.
 
