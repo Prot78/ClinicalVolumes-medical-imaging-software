@@ -219,6 +219,8 @@ Figure 9. Intra and inter observer values of ClinicalVolumes and Manual segmenta
     
 ![hello](images/Table1.PNG).
 
+Table 1. ClinicalVolumes - Manual segmentation comparison. . Mean and relative values ± SD are reported in addition to the speed up factor.
+
 
 ## Discussion
 This paper presents ClinicalVolumes as a robust and flexible computer program for rapid volumetric segmentation and quantification where a threshold method embedded into a semi-automatic tool is able to provide accurate and fast volumetric data analysis. Its application to various medical scenarios, which differentiate such computer program from similar tools, and its validation on MRI datasets are reported. Although Echocardiography and CT volumes can be studied giving it a multimodality appearance, the software has not been fully validated for these two modalities.
@@ -244,4 +246,30 @@ Magnetic Resonance Imaging (MRI); Computer Tomography (CT); ejection fraction (E
 The project name is ClinicalVolumes and the project home page is https://www.kaggle.com/datasets/prot78/clinicalvolumes. Pre-compiled versions of the software are available for Windows. Programming language C++. Operating system requirements: Windows 7 of higher. ClinicalVolumes is freely available for investigational research purposes only, provided that relevant original research publications related to the software are cited. The program uses a GNU (General Public License) license. The software is not currently CE marked. The terms of the license do not include trials paid by pharmaceutical companies.
 
 
-Table 1. ClinicalVolumes - Manual segmentation comparison. . Mean and relative values ± SD are reported in addition to the speed up factor. 
+## References
+1.	Wyatt PP, Noble JA: MAP MRF joint segmentation and registration of medical images. Medical image analysis 7(4):539-552, 2003.
+2.	Pham DL, Xu C, Prince JL: Current methods in medical image segmentation. Annual review of biomedical engineering 2:315-337, 2000.
+3.	Taylor P: Invited review: computer aids for decision-making in diagnostic radiology--a literature review. The British journal of radiology 68(813):945-957, 1995.
+4.	Heijman E, Aben JP, Penners C, Niessen P, Guillaume R, van Eys G, Nicolay K, Strijkers GJ: Evaluation of manual and automatic segmentation of the mouse heart from CINE MR images. Journal of magnetic resonance imaging: JMRI 27(1):86-93, 2008.
+5.	White HD, Norris RM, Brown MA, Brandt PW, Whitlock RM, Wild CJ: Left ventricular end-systolic volume as the major determinant of survival after recovery from myocardial infarction. Circulation 76(1):44-51, 1987.
+6.	Keller SS, Roberts N: Measurement of brain volume using MRI: software, techniques, choices and prerequisites. Journal of anthropological sciences: JASS 87:127-151, 2009.
+7.	Sharma N, Aggarwal LM: Automated medical image segmentation techniques. Journal of medical physics / Association of Medical Physicists of India 35(1):3-14, 2010.
+8.	Uthaya S, Thomas EL, Hamilton G, Dore CJ, Bell J, Modi N: Altered adiposity after extremely preterm birth. Pediatric research 57(2):211-215, 2005.
+9.	Heiberg E, Sjogren J, Ugander M, Carlsson M, Engblom H, Arheden H: Design and validation of Segment--freely available software for cardiovascular image analysis. BMC medical imaging 10:1, 2010.
+10.	Kaus MR, von Berg J, Weese J, Niessen W, Pekar V: Automated segmentation of the left ventricle in cardiac MRI. Med Image Anal 8(3):245-254, 2004.
+11.	Available at http://www.cmrtools.com/cmrweb/CMRtoolsIntroduction.htm.
+12.	Protti A, Sirker A, Shah AM, Botnar R: Late gadolinium enhancement of acute myocardial infarction in mice at 7T: cine-FLASH versus inversion recovery. Journal of magnetic resonance imaging: JMRI 32(4):878-886, 2010.
+13.	Available at http://www.itk.org/.
+14.	Available at http://www.opengl.org/.
+15.	Available at http://qt.nokia.com/.
+16.	Kim RJ, Fieno DS, Parrish TB, Harris K, Chen EL, Simonetti O, Bundy J, Finn JP, Klocke FJ, Judd RM: Relationship of MRI delayed contrast enhancement to irreversible injury, infarct age, and contractile function. Circulation 100(19):1992-2002, 1999.
+17.	Thomas EL, Parkinson JR, Frost GS, Goldstone AP, Dore CJ, McCarthy JP, Collins AL, Fitzpatrick JA, Durighel G, Taylor-Robinson SD et al: The missing risk: MRI and MRS phenotyping of abdominal adiposity and ectopic fat. Obesity 20(1):76-87, 2012.
+18.	Ross R, Leger L, Guardo R, De Guise J, Pike BG: Adipose tissue volume measured by magnetic resonance imaging and computerized tomography in rats. Journal of applied physiology 70(5):2164-2172, 1991.
+19.	Mercier JC, DiSessa TG, Jarmakani JM, Nakanishi T, Hiraishi S, Isabel-Jones J, Friedman WF: Two-dimensional echocardiographic assessment of left ventricular volumes and ejection fraction in children. Circulation 65(5):962-969, 1982.
+20.	Zur Y, Stokar S, Bendel P: An analysis of fast imaging sequences with steady-state transverse magnetization refocusing. Magnetic resonance in medicine : official journal of the Society of Magnetic Resonance in Medicine / Society of Magnetic Resonance in Medicine 6(2):175-193, 1988.
+21.	Zur Y, Wood ML, Neuringer LJ: Motion-insensitive, steady-state free precession imaging. Magnetic resonance in medicine : official journal of the Society of Magnetic Resonance in Medicine / Society of Magnetic Resonance in Medicine 16(3):444-459, 1990.
+22.	Gerriets T, Stolz E, Walberer M, Muller C, Kluge A, Bachmann A, Fisher M, Kaps M, Bachmann G: Noninvasive quantification of brain edema and the space-occupying effect in rat stroke models using magnetic resonance imaging. Stroke; a journal of cerebral circulation 35(2):566-571, 2004.
+23.	Phinikaridou A, Andia ME, Protti A, Indermuehle A, Shah A, Smith A, Warley A, Botnar RM: Noninvasive magnetic resonance imaging evaluation of endothelial permeability in murine atherosclerosis using an albumin-binding contrast agent. Circulation 126(6):707-719, 2012.
+24.	Riegler J, Cheung KK, Man YF, Cleary JO, Price AN, Lythgoe MF: Comparison of segmentation methods for MRI measurement of cardiac function in rats. Journal of magnetic resonance imaging : JMRI 32(4):869-877, 2010.
+25.	Heiberg E, Wigstrom L, Carlsson M, Bolger A, Karlsson M: Time Resolved Three-dimensional Automated Segmentation of the Left Ventricle. . In: In proceedings of IEEE Computers in Cardiology. Lyon, France; 599 - 602, 2005.
+ 
