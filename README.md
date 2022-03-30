@@ -61,3 +61,28 @@ The software architecture consists of three main layers, as shown in figure 1: t
 ![hello](images/Fig1.PNG).
 
 Figure 1. Schematic representation of ClinicalVolumes architecture. Graphical User Interface (GUI), Application Programming Interface (API) and the third-party libraries are schematically reported.
+
+ClinicalVolumes relies on three main third-party libraries: Insight Segmentation and Registration Toolkit (ITK); Open Graphics Library (OpenGL); Qt (figure 1). 
+•	ITK: is an open-source cross-platform set of libraries for medical image analysis. ClinicalVolumes uses ITK [13] mainly to manage the reading and writing of images using the DICOM standard through the Grassroots DICOM (GDCM) library. GDCM is an open source, cross-platform library for reading and writing DICOM files. 
+•	Open Graphics Library (OpenGL) [14]: is an industry standard graphics library for cross-platform, hardware-accelerated and high performance 2D and 3D image visualization. OpenGL allows the user to take advantage of hardware acceleration by graphics cards. OpenGL is ideal for 3D rendering, but it also performs extremely well on 2D rendering functions. However, it provides little support for creating user interfaces for complex applications.
+•	Qt [15]:  is a cross-platform library for application building and user interface creation. It includes, among others, functions for file I/O, event handling and multithreading and a set of customizable widgets. As a central feature of Qt, signals and slots are used for communication between objects, by implementing the observer pattern in a simple and type-safe way. In addition, Qt includes a module specifically implemented to perform 2D and 3D renderings with OpenGL. 
+The above third-party libraries have been selected to take advantage of system resources for maximum graphics and interaction performance, which is of great importance, in particular, for cardiac imaging where the volumes are frequently large and multidimensional in space and time. 
+The ClinicalVolumes API also includes four main libraries specifically developed to provide quick and reliable management, including customized visualization and quantification, of medical image data:
+•	The I/O library provides the functions needed to:
+−	read/write DICOM files;
+−	store/retrieve segmentation and quantification results.
+•	An in-house visualization library, “Vis”, provides the functions needed for:
+−	2D and 2D+T visualization of volume images and segmentations;
+−	3D and 3D+T visualization of volume images;
+−	Zoom, pan and layout optimization;
+−	Adjustment of image brightness, contrast and opacity.
+•	An in-house segmentation library, “Segm” includes the functions needed for the semi-automatic segmentation of different anatomical structures, including:
+−	threshold-based pixel clusters generation;
+−	manual addition/removal of pixels group;
+−	segmentation propagation to other frames/slices.
+•	An in-house library, “Calc”, is devoted to perform all the calculations needed for the quantification of the segmented structures, including areas, volumes and weight estimations. In particular, for cardiac applications, the end-diastolic (EDV) and end-systolic volume (ESV) frames, ejection fraction (EF), cardiac output (CO) and stroke volume (SV) are automatically computed.
+The ClinicalVolumes GUI contains all widgets needed for the user to interact with its API. The GUI implementation relies on the customization of widgets provided by Qt and on the implementation of specific signals and slots for the communication between objects. Its main window consists of: 
+−	an OpenGL widget that allows the access of all the visualizations and segmentation features, for optimized graphics performances; 
+−	all control/mouse widgets, toolbars, menus as described in the section below;
+−	all mouse and keyboard controls.
+
