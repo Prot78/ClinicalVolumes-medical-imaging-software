@@ -171,7 +171,25 @@ The segmentation time is strictly related to the number and quality of the image
 
 Figure 4. LV blood pool and myocardial septum segmentation for clinical and pre-clinical volumes. The cluster optimization process on the left ventricle cavity is reported in the upper image row (from A to E).  The cluster will be smaller (B or expanding outside the LV cavity (C when the applied cluster threshold is respectively lower or higher than the optimal value (D. The cluster border can also be visualized (E. Once achieved the best cluster threshold, a full clinical (F, or preclinical (G segmentation can be accurately obtained by automatically applying the cluster to the entire volume. 
 
+
+A.1.2. Heart and brain ischemia
+
+In-vivo heart and ex-vivo cases of brain ischemia are shown in figure 5. In figure 5A, viable tissue, blood and ischemic regions are identified and segmented by the use of three different colors representing three different segmentation options. Volume information was provided at the end of the analysis in the ClinicalVolumes output text file. The segmentation analysis time was about 5 minutes for each volume, compared to the 10 minutes manual segmentation (measurements not shown).
+Figure 5B depicts regions of brain ischemia (highlighted in orange). The analysis time was about 10-12 minutes, which was two fold faster than that of a full manual segmentation (about 20 minutes) (measurements not shown).
+
+![hello](images/Fig5.PNG).
+
 Figure 5. Ischemia mouse model for in-vivo myocardium and ex-vivo brain. Regions of ischemia are segmented and differentiated from regions of valuable tissue. The different colors reported in the segmentation correspond to different features of the applied clusters. 
+
+A.1.3. Brain and tumor
+
+White and gray brain matter can be identified and differentiated by applying a segmentation based on the contrast generated between the two corresponding areas (figure 6B). In a similar manner, tumor borders can be identified. Any tumor area showing a distinctive contrast compared to healthy tissue can be resolved. In some cases this might include the use of contrast agents (figure 6B).
+
+A.1.4. Total adipose tissue mass
+
+Total adipose tissue was segmented as in figure 6C. After finding the best intensity signal threshold a cluster was applied on a single image and propagated to all images in the volume. Manual intervention was engaged to exclude subcutaneous fat, after recording the total fat values, in order to estimate the internal fat. Subcutaneous adipose tissues enhance regions along the perimeter of the abdominal image and can therefore be easily identified. ClinicalVolumes typical analysis time was about 9 minutes. In contrast, a full manual segmentation required about 35 minutes (measurements not shown).
+
+![hello](images/Fig6.PNG).
 
 Figure 6. Volumetric models for in-vivo images of myocardium A) brain B) and adipose tissues C). Non segmented (original) and segmented images are reported. 3 different colors intervene in the segmentation.
 
