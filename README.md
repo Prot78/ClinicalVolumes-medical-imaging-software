@@ -20,9 +20,11 @@ Recent years have seen a rapid evolution of medical image analysis software [4, 
 The accuracy and efficiency of the new software has been evaluated for several MRI applications and the results are here reported. The tool is routinely used to perform cardiovascular MRI image analysis in our laboratories, thereby providing valuable diagnostic information for pre-clinical studies in murine models of cardiac diseases [12]. 
 
 
-Method
+## Method
 The design, implementation, medical applications and validation of the software are described in this section.
-A. Design
+
+### A. Design
+
 A.1. Overview
 ClinicalVolumes is a volumetric analysis software relying on an efficient clustering threshold-based technique to limit areas of interest in a semi-automated way. The software is intended to process images or image stacks (a single image (2D), a time-resolved single image (2D+T), a stack of images representing a multi-slice image volume (3D) or a time-resolved multi-slice image volume (3D+T)).
 The software loads and stores data in DICOM format, the standard format for handling, storing, printing, and transmitting information in medical imaging. Single volumes are typically uploaded and analyzed. This operation itself neglects the use of very large datasets of the order of Gigabytes (single medical volumes are usually smaller than 1Gb) which could exceed the computer RAM, used for I\O, thus sensibly affecting the analysis time.
