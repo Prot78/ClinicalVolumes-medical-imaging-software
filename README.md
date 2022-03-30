@@ -203,6 +203,8 @@ The validation of human and pre-clinical cardiac datasets was carried out by com
 
 Figure 7.  Bland-Altman plot of clinical (above) and preclinical (below) cardiac MRI data for EDV, ESV EF and Mass. Manual and ClinicalVolumes measurement from tester A were compared in order to achieve the relative variability values reported on the ordinate axis. The continuous and dashed line indicates the mean of the differences and 2 SD, respectively.
 
+![hello](images/Table1.PNG).
+
 B.2. Heart and brain ischemia
 In-vivo heart and ex-vivo brain ischemia intra- and inter-observer variability, mean and relative differences, for ClinicalVolumes and full manual segmentation, respectively are reported in figure 9. Also in these cases ClinicalVolumes seems to report higher precision and accuracy than a full manual segmentation.  Table 1 shows intra-observer variability of the segmentation methods. Figure 8A and 8B report the Bland-Altman analysis for heart and brain ischemia, respectively. The respective accuracies were about 16% and 11%. 
 
@@ -238,7 +240,7 @@ The new semi-automated multi-modality signal intensity based computer program pr
 Magnetic Resonance Imaging (MRI); Computer Tomography (CT); ejection fraction (EF); left ventricle end-diastolic volume (LVEDV); left ventricle end-systolic volume (LVESV); left ventricle (LV); stroke volume (SV); cardiac output (CO); signal intensities (SI); Application Programming Interface (API); Graphical User Interface (GUI); Insight Toolkit (ITK); Open Graphics Library (OpenGL); late gadolinium enhancement (LGE); field of view (FOV); GNU (General Public License).
 
 ## Availability and requirements
-The project name is ClinicalVolumes and the project home page is https://www.kaggle.com/datasets/prot78/clinicalvolumes. Pre-compiled versions of the software are available for Windows and Mac OS X. Programming language C++. Operating system requirements: Windows 7 of higher. ClinicalVolumes is freely available for investigational research purposes only, provided that relevant original research publications related to the software are cited. The program uses a GNU (General Public License) license. The software is not currently CE marked. The terms of the license do not include trials paid by pharmaceutical companies.
+The project name is ClinicalVolumes and the project home page is https://www.kaggle.com/datasets/prot78/clinicalvolumes. Pre-compiled versions of the software are available for Windows. Programming language C++. Operating system requirements: Windows 7 of higher. ClinicalVolumes is freely available for investigational research purposes only, provided that relevant original research publications related to the software are cited. The program uses a GNU (General Public License) license. The software is not currently CE marked. The terms of the license do not include trials paid by pharmaceutical companies.
 
 
 Table 1. ClinicalVolumes - Manual segmentation comparison. . Mean and relative values ± SD are reported in addition to the speed up factor. 
