@@ -133,6 +133,23 @@ Figure 3 shows the use of ClinicalVolumes segmentation in Echocardiography volum
 
 Figure 3. Echocardiography segmentations. In Echocardiography, diastolic and systolic images have been segmented to study volumes and evaluate EF. Sectors (right echocardiography images) can be applied to the segmentation analysis in order to characterize abnormality in specific areas of the myocardium. 
 
+### D. Validation
+ClinicalVolumes was validated against a full manual segmentation in three medical applications: 
+1) cardiac functional/volumetric parameters (13 human cases [analyzed by an experienced clinician and a senior scientist] ; 15 pre-clinical murine cases [analyzed by senior scientists]); 
+2) ischemia volumes (15 pre-clinical cases of  in-vivo mice hearts; 19 pre-clinical cases of ex-vivo mice brain) [analyzed by senior scientists]; 
+3) total adipose tissue mass estimation (20 pre-clinical cases of in-vivo mice) [analyzed by senior scientists]. 
+
+D.1. Datasets
+
+Each human cardiac volume was obtained with a steady-state free precession (SPSS) cine MRI sequence in healthy volunteers, consisting of 12 short-axis slices of 30 frames each [20, 21]. Field of view (FOV) 37x37x96 cm3, matrix size 256x256 and heart rate 7015 heartbeats/min. The preclinical cardiac data were obtained with a multi-slice gradient echo cine sequence, consisting of 9 short-axis slices of 12 frames each [12]. FOV was 25x25x9 mm3, matrix size 128x128 and heart rate 40035 heartbeats/min. The pre-clinical datasets were also used for evaluation of infarct size because the mice underwent coronary ligation 3 days prior to MRI (3 days post MI). Pre-clinical brain ischemia [22] and adipose tissue [8] volumes were acquired with a spin-echo technique. 50 slices were typically analyzed in both cases. FOV 40x40x50 mm3 for brain ischemia and 40x40x100 mm3 for adipose tissue. C56B16 black mice (age 8 to 12 weeks) were used in all pre-clinical experiments. 
+
+D.2. Image analysis
+
+ClinicalVolumes and a full manual segmentation image analysis were performed in all studies where intra- and inter-observer variability was estimated. Such analysis and the resulting accuracy are based on a numerical study and not on an absolute approach where segmented regions, obtained from the software and a manual approach, are overlapped in order to define an absolute accuracy. 
+Two scientists with at least 3 years of MR experience performed data analysis in all cases. They were both trained to use the ClinicalVolumes software as well as undertook a manual segmentation. Full manual segmentation was carried out with Osirix (OsiriX Imaging Software. http://www.osirix-viewer.com). Intra-observer variability of the individual methods was obtained from the measurement differences between the mean values of two successive segmentations achieved by observer A. Inter-observer variability was estimated by the difference between the segmentation results obtained by an observer A and an observer B. Intra-operator variability across the two different segmentation approaches is also reported. Bland-Altman statistics were utilized to investigate the accuracy of the two methods. The latter reports the relative difference (in percentage) between the numerical values created by ClinicalVolumes and those achieved with the manual segmentation with a  2 SD. A two-tailed paired Student’s t-test was used to determine any significant differences (P < 0.05). Excel was used for statistical analysis. 
+
+
+
 Figure 4. LV blood pool and myocardial septum segmentation for clinical and pre-clinical volumes. The cluster optimization process on the left ventricle cavity is reported in the upper image row (from A to E).  The cluster will be smaller (B or expanding outside the LV cavity (C when the applied cluster threshold is respectively lower or higher than the optimal value (D. The cluster border can also be visualized (E. Once achieved the best cluster threshold, a full clinical (F, or preclinical (G segmentation can be accurately obtained by automatically applying the cluster to the entire volume. 
 
 Figure 5. Ischemia mouse model for in-vivo myocardium and ex-vivo brain. Regions of ischemia are segmented and differentiated from regions of valuable tissue. The different colors reported in the segmentation correspond to different features of the applied clusters. 
